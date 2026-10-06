@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+    <EditText android:id="@+id/etUrl" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Masukkan URL YouTube"
+        android:inputType="textUri" />
+
+    <Button android:id="@+id/btnDownload" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Download MP3" />
+
+    <ProgressBar android:id="@+id/bar" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:max="100" />
+
+    <ScrollView android:id="@+id/scroll" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/tvLog" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="12sp"
+            android:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>
